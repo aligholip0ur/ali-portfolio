@@ -7,7 +7,7 @@ import {
   useSpring,
   useTransform,
 } from "motion/react";
-import Pages from "@/components/Pages";
+import Pages from "./Pages";
 export default function Home() {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -18,19 +18,15 @@ export default function Home() {
   return (
     <>
       <div>
-        {[1, 2, 3, 4].map((item) => (
+        {[1, 2, 3, 4].map((item,key) => (
           <motion.div
-            key={item}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
-            viewport={{ once: true, amount: 0.3 }}
+           
           >
-            <Pages id={item} />
+            <Pages id={item} key={key} />
           </motion.div>
         ))}
         <motion.div
-          className="bg-black p-2 rounded-md bottom-20 sticky"
+          className="bg-black dark:bg-white p-2 h-[5px] left-0 right-0 flex items-center justify-center rounded-md bottom-20 fixed"
           style={{ scaleX }}
         />
       </div>

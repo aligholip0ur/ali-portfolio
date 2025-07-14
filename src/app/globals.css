@@ -5,15 +5,12 @@
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-   scroll-snap-align: start;
-}
-.myscroll{
-
   scroll-snap-align: start;
 }
 
+
 @theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
+  --radius-sm: calc(var(--radzius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
