@@ -5,9 +5,9 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
 type CarouselProps = {
-  slides: React.ReactNode[]; // محتوای اسلایدها
-  perView?: number; // تعداد اسلاید همزمان
-  spacing?: number; // فاصله بین اسلایدها
+  slides: React.ReactNode[];  
+  perView?: number; 
+  spacing?: number;   
   autoplay?: boolean;
   interval?: number;
   showArrows?: boolean;
@@ -21,7 +21,7 @@ const Carousel: React.FC<CarouselProps> = ({
   spacing = 15,
   autoplay = false,
   interval = 3000,
-  showArrows = true,
+  showArrows = false,
   showDots = true,
   className,
 }) => {
@@ -46,7 +46,7 @@ const Carousel: React.FC<CarouselProps> = ({
   }, [instanceRef, autoplay, interval]);
 
   return (
-    <div className={`relative ${className}`}>
+    <div className={` ${className}`}>
       {/* Slider container */}
       <div ref={sliderRef} className="keen-slider">
         {slides.map((slide, index) => (
@@ -76,12 +76,12 @@ const Carousel: React.FC<CarouselProps> = ({
 
       {/* Dots */}
       {showDots && (
-        <div className="flex justify-center gap-2 mt-4">
+        <div className="relative flex flex-col bottom-50 items-end left-3  gap-2 ">
           {slides.map((_, idx) => (
             <button
               key={idx}
               onClick={() => instanceRef.current?.moveToIdx(idx)}
-              className="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-500 transition"
+              className="w-3  relative  h-3 rounded-full bg-gray-300 hover:bg-gray-500 transition"
             />
           ))}
         </div>

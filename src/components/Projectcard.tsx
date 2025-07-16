@@ -2,6 +2,7 @@
 import { Card, CardContent, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ProjectCardProps {
   title: string;
@@ -12,30 +13,42 @@ interface ProjectCardProps {
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, link }) => {
   return (
-    <Card className="w-full h-full flex flex-col justify-between shadow-lg hover:shadow-xl transition">
-      <CardContent className="p-4 space-y-4">
+    link ? (
+      <Link href={link}>
+        <Card  className="flex flex-col shadow-lg h-[100%] hover:shadow-4xl hover:scale-93 transition-all duration-500 transform group-hover:-translate-y-1.5">
+          {image && (
+            <div className="w-full h-48 relative rounded-t-lg overflow-hidden">
+              <Image src={image} alt={title} fill className="object-cover transition-transform duration-500 hover:scale-110" />
+            </div>
+          )}
+
+          <CardContent className="flex flex-col flex-1  justify-between gap-4 p-4">
+            <div className="flex flex-col gap-2">
+              <CardTitle className="text-lg">{title}</CardTitle>
+              <CardDescription className="text-sm text-gray-500 whitespace-pre-line">
+                {description}
+              </CardDescription>
+            </div>
+          </CardContent>
+        </Card>
+      </Link>
+    ) : (
+      <Card  className="flex flex-col h-full shadow-lg hover:shadow-xl transition">
         {image && (
-          <div className="w-full h-40 relative rounded-lg overflow-hidden">
-            <Image
-              src={image}
-              alt={title}
-              fill
-              className="object-cover"
-            />
+          <div className="w-full h-48 relative rounded-t-lg overflow-hidden">
+            <Image src={image} alt={title} fill className="object-cover" />
           </div>
         )}
-        <div>
-          <CardTitle className="text-lg">{title}</CardTitle>
-          <CardDescription className="text-sm text-gray-500 mt-2">{description}</CardDescription>
-        </div>
-        {link && (
-          <Button asChild className="mt-4 w-full">
-            <a href={link} target="_blank" rel="noopener noreferrer">
-              مشاهده پروژه
-            </a>
-          </Button>
-        )}
-      </CardContent>
-    </Card>
+
+        <CardContent className="flex flex-col flex-1 justify-between gap-4 p-4">
+          <div className="flex flex-col gap-2">
+            <CardTitle className="text-lg">{title}</CardTitle>
+            <CardDescription className="text-sm text-gray-500 whitespace-pre-line">
+              {description}
+            </CardDescription>
+          </div>
+        </CardContent>
+      </Card>
+    )
   );
 };

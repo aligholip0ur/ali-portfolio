@@ -1,17 +1,89 @@
+import { ExternalLink, FolderGit2, FolderKanban } from "lucide-react";
+import Carousel from "./Carousel"
+import { ProjectCard } from "./Projectcard";
 import Section from "./Section"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
+const projectData = [
+    {
+        title: "TodoList",
+        description: "A TodoList Which Created With React and Tailwind css",
+        image: "/pics/Screenshot 2025-07-14 151715.png",
+        link: "https://advanced-to-do-list-react-mu.vercel.app/",
+    },
+    {
+        title: "MusicPlayer",
+        description: "A MusicPlayer which Made with JS & Html&Css",
+        image: "/pics/Screenshot 2025-07-14 152438.png",
+        link: "https://music-player-zeta-two.vercel.app/",
+    },
+    {
+        title: "AdminPanel&UserManagement",
+        description: `An AdminPanel Which Created With Next Js & Supabase DataBase\nEmail: ali1383gho@gmail.com,\nPass: 123456`,
+        image: "/pics/Screenshot 2025-07-14 153733.png",
+        link: "https://user-management-dashboard-lilac.vercel.app/",
+    },
+    {
+        title: " SignIn&LocationSaverApiWith React",
+        description: `A SignIn App with Map & Location Saver`,
+        image: "/pics/Screenshot 2025-07-14 162301.png",
+        link: "https://sign-in-location-saver-achare-api.vercel.app/",
+    },
+    {
+        title: "WishList React & KanBanChart",
+        description: `A WisList Which U can Drag&Drop According Ur depends`,
+        image: "/pics/Screenshot 2025-07-15 140707.png",
+        link: "https://wish-lisitwith-kanban-chart.vercel.app/",
+    },
+    {
+        title: "Weather App with weather Api",
+        description: `A Weather App which U can Write The Name of Country/City & Get the Weather Info`,
+        image: "/pics/Screenshot 2025-07-14 162811.png",
+        link: "https://weather-app-api-phi.vercel.app/",
+    },
+  
+];
 
 
-
-export default function Projects()
-{
-    return(
-        <>
-     <Section >
-        <div className="flex h-screen justify-center items-center">
-            <span className="text-transparent bg-clip-text p-5 text-6xl font-bold bg-gradient-to-bl from-gray-900 to-blue-600">Ali is the Best</span>
+export default function Projects() {
+    const slides = projectData.map((project, index) => (
+        <div key={index} className="p-2 h-full">
+            <ProjectCard {...project} />
         </div>
-        
-    </Section>       
+    ));
+    return (
+        <>
+            <Section id="projects" className="p-6 pt-[90px]" >
+                <Card>
+                    <CardHeader>
+                        <CardTitle className="flex items-center gap-2 text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-700 dark:from-blue-400 dark:to-purple-500">
+                            <FolderGit2 className=" text-gray-700 dark:text-gray-200" />                Projects
+                        </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <div className="flex flex-col gap-2">
+                            <Carousel
+                                slides={slides}
+                                spacing={20}
+                                autoplay={true}
+                                interval={3000}
+                                showArrows={false}
+                                showDots={false}
+                                className=""
+                            />
+                            <a
+                                href="https://github.com/sample/techtrend-project"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex hover:scale-95 duration-500 items-center justify-center text-center gap-1 text-blue-600 dark:text-blue-400 hover:underline  text-md"
+                            >
+                                <ExternalLink className="text-md" />
+                                View More Projects
+                            </a>
+                        </div>
+
+                    </CardContent>
+                </Card>
+            </Section>
         </>
     )
 }

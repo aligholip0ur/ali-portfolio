@@ -12,16 +12,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
+
 
   return (
-    <html lang="en" className="dark" >
-      <body>
-        <ThemeProvider >
-        <Header />
-        {children}
+    <html lang="en">
+      <body className="transition-colors duration-2000 delay-300 ease-out">
+        <ThemeProvider>
+          <Header />
+          {children}
         </ThemeProvider>
       </body>
     </html>
+
   );
 }

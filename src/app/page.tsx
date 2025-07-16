@@ -7,7 +7,9 @@ import {
   useSpring,
   useTransform,
 } from "motion/react";
-import Pages from "./Pages";
+import About from "@/components/About";
+import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
 export default function Home() {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -17,14 +19,10 @@ export default function Home() {
   });
   return (
     <>
-      <div>
-        {[1, 2, 3, 4].map((item,key) => (
-          <motion.div
-           
-          >
-            <Pages id={item} key={key} />
-          </motion.div>
-        ))}
+      <div className="min-h-screen snap-y snap-mandatory ">
+         <About/>
+         <Projects/>
+         <Skills/>
         <motion.div
           className="bg-black dark:bg-white p-2 h-[5px] left-0 right-0 flex items-center justify-center rounded-md bottom-20 fixed"
           style={{ scaleX }}
