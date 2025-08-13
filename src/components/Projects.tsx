@@ -1,56 +1,9 @@
-"use client";
-import { ExternalLink, FolderGit2, FolderKanban } from "lucide-react";
+import { ExternalLink, FolderGit2} from "lucide-react";
 import Carousel from "./Carousel"
 import { ProjectCard } from "./Projectcard";
 import Section from "./Section"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
+import { Card, CardContent ,CardHeader, CardTitle } from "./ui/card";
 import { useTranslations } from "next-intl";
-const projectData = [
-    {
-        title: "TodoList",
-        description: "A TodoList Which Created With React and Tailwind css",
-        image: "/pics/Screenshot 2025-07-14 151715.png",
-        link: "https://advanced-to-do-list-react-mu.vercel.app/",
-    },
-    {
-        title: "MusicPlayer",
-        description: "A MusicPlayer which Made with JS & Html&Css",
-        image: "/pics/Screenshot 2025-07-14 152438.png",
-        link: "https://music-player-zeta-two.vercel.app/",
-    },
-    {
-        title: "AdminPanel&UserManagement",
-        description: `An AdminPanel Which Created With Next Js & Supabase DataBase\nEmail: ali1383gho@gmail.com,\nPass: 123456`,
-        image: "/pics/Screenshot 2025-07-14 153733.png",
-        link: "https://user-management-dashboard-lilac.vercel.app/",
-    },
-    {
-        title: " SignIn&LocationSaverApiWith React",
-        description: `A SignIn App with Map & Location Saver`,
-        image: "/pics/Screenshot 2025-07-14 162301.png",
-        link: "https://sign-in-location-saver-achare-api.vercel.app/",
-    },
-    {
-        title: "WishList React & KanBanChart",
-        description: `A WisList Which U can Drag&Drop According Ur depends`,
-        image: "/pics/Screenshot 2025-07-15 140707.png",
-        link: "https://wish-lisitwith-kanban-chart.vercel.app/",
-    },
-    {
-        title: "Weather App with weather Api",
-        description: `A Weather App which U can Write The Name of Country/City & Get the Weather Info`,
-        image: "/pics/Screenshot 2025-07-14 162811.png",
-        link: "https://weather-app-api-phi.vercel.app/",
-    },
-    {
-        title: "Todo List with Zustand",
-        description: `A Todo List which has many options & developes with Zustand`,
-        image: "/pics/Screenshot 2025-08-11 181624.png",
-        link: "https://todo-list-with-zustand-mu.vercel.app/",
-    },
-  
-];
-
 
 export default function Projects() {
     const t = useTranslations();

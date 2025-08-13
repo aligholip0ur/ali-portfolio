@@ -1,8 +1,5 @@
 import {
-    motion,
     MotionValue,
-    useScroll,
-    useSpring,
     useTransform,
   } from "motion/react"
 

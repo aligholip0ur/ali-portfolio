@@ -1,11 +1,8 @@
 "use client";
-import Image from "next/image";
 import {
   motion,
-  MotionValue,
   useScroll,
   useSpring,
-  useTransform,
 } from "motion/react";
 import About from "@/components/About";
 import Projects from "@/components/Projects";

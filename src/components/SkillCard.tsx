@@ -1,8 +1,8 @@
-import { ExternalLink, LayoutDashboard } from "lucide-react";
+import { ExternalLink, } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { Progress } from "./ui/progress";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge"; // برای برچسب‌ها
+import { Badge } from "@/components/ui/badge";
 import {
     Dialog,
     DialogClose,
