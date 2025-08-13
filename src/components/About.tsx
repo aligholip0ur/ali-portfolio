@@ -11,12 +11,12 @@ const About: React.FC = () => {
     <>
       <Section id="about" className="flex  p-6 pt-[30px] md:pt-[80px] justify-center items-center  ">
         <div className="md:flex md:flex-col md:gap-3 lg:gap-8">
-          <Card className="mt-15 md:mt-10">
+          <Card className="mt-15 md:mt-10 !gap-2">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 justify-between  text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-700 dark:from-blue-400 dark:to-purple-500">
                 <div className="flex gap-2 md:text-2xl">
                   <Code className="mt-1 dark:text-gray-200 text-gray-700" />
-                  <span>{t('aboutme')}</span>
+                  <span className="whitespace-nowrap">{t('aboutme')}</span>
                 </div>
                 <div>
                   <DownloadButton></DownloadButton>
@@ -69,14 +69,14 @@ const About: React.FC = () => {
                 <div className="flex items-center gap-2">
                   <Briefcase className=" text-gray-700 dark:text-gray-200" />
                   <h4 className="text-md font-semibold text-gray-900 dark:text-white">
-                   {t('worktiltle2')}
+                    {t('worktiltle2')}
                   </h4>
                 </div>
                 <CardDescription className="text-gray-600 dark:text-gray-400 my-2">
                   {t('workyear2')}
                 </CardDescription>
                 <p className="text-base text-gray-700 dark:text-gray-300 my-3">
-                 {t('toolsused')}{"   "}
+                  {t('toolsused')}{"   "}
 
                   <span className="inline-block bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-medium transition-all duration-300 hover:bg-blue-200 dark:hover:bg-blue-800/70 hover:scale-105">React</span>,{" "}
                   <span className="inline-block bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-medium transition-all duration-300 hover:bg-blue-200 dark:hover:bg-blue-800/70 hover:scale-105">Redux Toolkit</span>,
@@ -103,7 +103,7 @@ const About: React.FC = () => {
           <CardHeader className="">
             <CardTitle className="flex items-center gap-2 text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-700 dark:from-blue-400 dark:to-purple-500">
               <Code className="w-6 h-6 dark:text-gray-200 text-gray-700" />
-              Work Experiences
+              {t('workexperience')}
             </CardTitle>
           </CardHeader>
           <CardContent className="grid  md:grid-cols-2 gap-5">
@@ -112,16 +112,16 @@ const About: React.FC = () => {
               <div className="flex items-center gap-2">
                 <Briefcase className=" text-gray-700 dark:text-gray-200" />
                 <h4 className="text-md font-semibold text-gray-900 dark:text-white">
-                  Front-End Developer at AtiNegar
+                  {t('worktitle1')}
                 </h4>
               </div>
               <CardDescription className="text-gray-600 dark:text-gray-400 mt-1">
-                2024-2025
+                {t('workyear1')}
               </CardDescription>
               <p className="text-base text-gray-700 dark:text-gray-300 mt-2">
-                In this Project of Factopry we worked on an AdminPanel
+                {t('workdecriotion1')}
                 <br></br>
-                Tools Used:
+                {t('toolsused')}
                 <br></br>
                 <span className="inline-block bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 px-3 py-1 rounded-full text-xs font-medium transition-all duration-300 hover:bg-blue-200 dark:hover:bg-blue-800/70 hover:scale-105">Javascript</span>,{" "}
                 <span className="inline-block bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 px-3 py-1 rounded-full text-xs font-medium transition-all duration-300 hover:bg-blue-200 dark:hover:bg-blue-800/70 hover:scale-105">Asp.net MVC</span>,
@@ -134,7 +134,7 @@ const About: React.FC = () => {
                 className="flex items-center gap-1 text-blue-600 dark:text-blue-400 hover:underline mt-2 text-sm"
               >
                 <ExternalLink className="w-4 h-4" />
-                View Project
+                {t('viewsprocect')}
               </a>
             </div>
 
@@ -143,16 +143,16 @@ const About: React.FC = () => {
               <div className="flex items-center gap-2">
                 <Briefcase className=" text-gray-700 dark:text-gray-200" />
                 <h4 className="text-md font-semibold text-gray-900 dark:text-white">
-                  Junior Front-End Developer at AvihangCo
+                  {t('worktiltle2')}
                 </h4>
               </div>
               <CardDescription className="text-gray-600 dark:text-gray-400 mt-1">
-                2025-2026
+                {t('workyear2')}
               </CardDescription>
-              <br></br>
-              Tools Used:
-              <br></br>
+             
               <p className="text-base text-gray-700 dark:text-gray-300 mt-2">
+              {t('toolsused')}
+              <br/>
                 <span className="inline-block bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-medium transition-all duration-300 hover:bg-blue-200 dark:hover:bg-blue-800/70 hover:scale-105">React</span>,{" "}
                 <span className="inline-block bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-medium transition-all duration-300 hover:bg-blue-200 dark:hover:bg-blue-800/70 hover:scale-105">TailWind Css</span>,
                 <span className="inline-block bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-medium transition-all duration-300 hover:bg-blue-200 dark:hover:bg-blue-800/70 hover:scale-105">Redux ToolKit</span>
@@ -164,7 +164,7 @@ const About: React.FC = () => {
                 className="flex items-center gap.LINEBREAK 1 text-blue-600 dark:text-blue-400 hover:underline mt-2 text-sm"
               >
                 <ExternalLink className="w-4 h-4" />
-                View Project
+                {t('viewsprocect')}
               </a>
             </div>
           </CardContent>

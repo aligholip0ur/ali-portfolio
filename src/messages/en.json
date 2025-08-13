@@ -14,7 +14,7 @@
   "workdecriotion1": "Worked on developing the admin panel and implementing the logging system.",
   "toolsused": "Tools Used:",
   "viewsprocect": "View Project",
-  "worktiltle2":"Front End Developer in AvihangCo",
+  "worktiltle2": "Front End Developer in AvihangCo",
   "workyear2": "2025-until now",
 
   "projectData": [
@@ -61,11 +61,11 @@
       "link": "https://todo-list-with-zustand-mu.vercel.app/"
     }
   ],
-  "frontend":"Front-End Development",
-  "backend":"Back-End Development",
-  "uiux":"UI/UX Design",
-  "windowspp":"Windows App Development",
-
+  "frontend": "Front-End Development",
+  "backend": "Back-End Development",
+  "uiux": "UI/UX Design",
+  "windowspp": "Windows App Development",
+  "details": "details",
   "viewmoreprojects": "More Projects",
   "contactme!": "Contact Me!",
   "contactMessage": [
@@ -81,7 +81,10 @@
   "youremail": "Your Email",
   "yournote": "Your Message",
   "note": "Message",
-  "send": "Send"
+  "send": "Send",
+  "sending":"sending...",
+  "nameRequired":"NameRequired",
+  "invalidEmail":"InvalidEmail",
+  "emailRequired":"EmailRequired",
+  "messageRequired":"MessageRequired"
 }
-
-

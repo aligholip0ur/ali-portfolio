@@ -13,6 +13,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog";
+import { useTranslations } from "next-intl";
 
 type SkillsProps = {
     Cardtitle?: string;
@@ -26,7 +27,7 @@ export default function SkillCard(myprops: SkillsProps) {
     const wordsArray = myprops.Carddecription
         ? myprops.Carddecription.split(",")
         : [];
-
+const t = useTranslations();
     return (
         <Card>
             <CardHeader>
@@ -53,7 +54,7 @@ export default function SkillCard(myprops: SkillsProps) {
                                     <div className="flex gap-1 md:hidden cursor-pointer">
                                         <ExternalLink size={16} color="#1447e6" />
                                         <span className="text-sm md:text-base text-blue-700">
-                                            details
+                                            {t('details')}
                                         </span>
                                     </div>
                                 </DialogTrigger>

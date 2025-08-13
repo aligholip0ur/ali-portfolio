@@ -63,8 +63,8 @@ export default function Projects() {
     ));
     return (
         <>
-            <Section id="projects" className="p-6 md:pt-[90px] pt-[110px]" >
-                <Card>
+            <Section id="projects" className="p-6 md:pt-[100px] pt-[110px]" >
+                <Card className="!gap-1">
                     <CardHeader>
                         <CardTitle className="flex items-center gap-2 text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-700 dark:from-blue-400 dark:to-purple-500">
                             <FolderGit2 className=" text-gray-700 dark:text-gray-200" /> {t('projects')}

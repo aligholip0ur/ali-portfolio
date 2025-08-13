@@ -39,13 +39,13 @@ export default function Navigatorr({ isDark, toggleTheme }: { isDark?: boolean, 
   const pathname = usePathname();
   const name = t('name');
   const letters = name.split('');
-console.log(pathname);
+  console.log(pathname);
 
   return (
     <>
       <nav className="w-full flex flex-row justify-between">
         <motion.div
-          className="flex  font-bold text-xl md:text-4xl  cursor-default select-none  mt-2 mx-3"
+          className="flex  font-bold text-xl md:text-4xl  cursor-default select-none  mt-2 md:mx-3"
           whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
           dir="ltr"
         >
@@ -104,8 +104,8 @@ console.log(pathname);
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem onClick={toggleTheme} className="cursor-pointer">
-                <NavigationMenuLink href={pathname ==="/en" ? "/fa" :"/en"}>
-                {pathname==="/en" ? "فارسی" : "English" }
+                <NavigationMenuLink href={pathname === "/en" ? "/fa" : "/en"}>
+                  {pathname === "/en" ? "فارسی" : "English"}
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <div className="flex">
@@ -144,6 +144,11 @@ console.log(pathname);
                 <NavigationMenuLink href="#skills">{t('skills')}</NavigationMenuLink>
                 <NavigationMenuLink href="#contact">{t('contact')}</NavigationMenuLink>
               </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem onClick={toggleTheme} className="cursor-pointer">
+              <NavigationMenuLink href={pathname === "/en" ? "/fa" : "/en"}>
+                {pathname === "/en" ? "فارسی" : "English"}
+              </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem onClick={toggleTheme}>
               <NavigationMenuLink>

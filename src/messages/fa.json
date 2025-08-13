@@ -79,5 +79,12 @@
   "youremail": "ایمیل شما",
   "yournote": "متن پیام",
   "note": "متن",
-  "send": "بفرست بره"
+  "details":"جزییات",
+  "send": "بفرست بره",
+  "sending":"در حال ارسال...",
+  "nameRequired":"نام الزامیست",
+  "invalidEmail":"ایمیل نامعتبر",
+  "emailRequired":"ایمیل الزامیست",
+  "messageRequired":"متن الزامیست"
+
 }
