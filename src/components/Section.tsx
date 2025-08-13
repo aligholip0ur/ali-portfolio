@@ -21,7 +21,7 @@ const Section = ({
   return (
     <section id={id} className={`snap-start  min-h-[calc(100vh-85px)]  ${className}`}>
       <motion.div
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 0, y: 70 }}
         whileInView={{ opacity: 1, y:0  }}
         transition={{ duration: 0.9, ease: "easeInOut", delay }}
         viewport={{ amount }}

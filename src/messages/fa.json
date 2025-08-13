@@ -1,0 +1,83 @@
+{
+  "name": "Ali Gholipour",
+  "about": "درباره",
+  "projects": "پروژه ها",
+  "skills": "مهارت ها",
+  "contact": "تماس",
+  "aboutme": "درباره من!",
+  "download": "دانلود رزومه",
+  "abouttext": "من یک توسعه‌دهنده فرانت‌اند با حدود سه سال تجربه موفق در طراحی و ساخت رابط‌های کاربری جذاب و کاربرپسند هستم. تو این مدت روی پروژه‌های متنوعی کار کردم و همیشه سعی کردم وب‌سایت‌هایی بسازم که هم واکنش‌گرا باشن و هم تجربه کاربری فوق‌العاده‌ای ارائه بدن.",
+  "abouttext2": "الان هم دارم مسیر یادگیری رو ادامه میدم و روی پروژه‌های مختلف با React و Next.js کار می‌کنم تا تجربه‌های کاربری جذاب‌تر، بهینه‌تر و راحت‌تری ایجاد کنم. دنبال فرصت‌های جدیدم تا هم مهارت‌هام رو بیشتر کنم و هم بتونم راه‌حل‌های خلاقانه‌ای ارائه بدم.",
+  "workexperience": "تجربه های کاری",
+  "worktitle1": "فرانت‌اند دولوپر مبتدی در شرکت آتی‌نگر",
+  "workyear1": "1403-1404",
+  "workyear2": "1404-تاکنون",
+  "workdecriotion1": "در این پروژه روی ادمین پنل و سیستم لاگ‌گیری کار و توسعه داده شد",
+  "toolsused": "ابزار های مورد استفاده:",
+  "worktiltle2": "توسعه دهنده فرانت اند در شرکت آویهنگ",
+  "viewsprocect": "دیدن پروژه",
+  "projectData": [
+    {
+      "title": "تودو لیست",
+      "description": "یک لیست کارها ساخته شده با React و Tailwind CSS",
+      "image": "/pics/Screenshot 2025-07-14 151715.png",
+      "link": "https://advanced-to-do-list-react-mu.vercel.app/"
+    },
+    {
+      "title": "پخش‌کننده موسیقی",
+      "description": "یک پخش‌کننده موسیقی ساخته شده با JavaScript، HTML و CSS",
+      "image": "/pics/Screenshot 2025-07-14 152438.png",
+      "link": "https://music-player-zeta-two.vercel.app/"
+    },
+    {
+      "title": "پنل مدیریت و مدیریت کاربران",
+      "description": "یک پنل مدیریت ساخته شده با Next.js و پایگاه‌داده Supabase\nایمیل: ali1383gho@gmail.com\nرمز عبور: 123456",
+      "image": "/pics/Screenshot 2025-07-14 153733.png",
+      "link": "https://user-management-dashboard-lilac.vercel.app/"
+    },
+    {
+      "title": "ورود و ذخیره موقعیت مکانی",
+      "description": "یک اپلیکیشن ورود با نقشه و قابلیت ذخیره موقعیت مکانی",
+      "image": "/pics/Screenshot 2025-07-14 162301.png",
+      "link": "https://sign-in-location-saver-achare-api.vercel.app/"
+    },
+    {
+      "title": "تودولیست و نمودار کانبان",
+      "description": "یک لیست آرزوها که می‌توانید بر اساس نیاز خود آیتم‌ها را جابه‌جا کنید",
+      "image": "/pics/Screenshot 2025-07-15 140707.png",
+      "link": "https://wish-lisitwith-kanban-chart.vercel.app/"
+    },
+    {
+      "title": "اپلیکیشن آب‌وهوا",
+      "description": "یک اپلیکیشن آب‌وهوا که می‌توانید نام کشور یا شهر را وارد کرده و اطلاعات آب‌وهوایی دریافت کنید",
+      "image": "/pics/Screenshot 2025-07-14 162811.png",
+      "link": "https://weather-app-api-phi.vercel.app/"
+    },
+    {
+      "title": "تودو لیست با Zustand",
+      "description": "یک لیست کارها با امکانات پیشرفته که با Zustand توسعه داده شده",
+      "image": "/pics/Screenshot 2025-08-11 181624.png",
+      "link": "https://todo-list-with-zustand-mu.vercel.app/"
+    }
+  ],
+  "viewmoreprojects": "پروژه های بیشتر",
+  "contactme!": "تماس با من!",
+  "contactMessage": [
+    "سوالی داری، پیشنهادی داری یا فقط می‌خوای یه سلام گرم بفرستی؟ :)",
+    "فرم زیر رو پر کن تا تو اولین فرصت جواب بدم.",
+    "",
+    "چه ایده‌ای برای پروژه داشته باشی، چه پیشنهادی برای همکاری، یا حتی بخوای فقط هرچی دل تنگت می‌خواد بنویسی، من با کمال میل می‌خونم.",
+    "پیامت برام مهمه — منتظرم با هم گپ بزنیم!"
+  ],
+  "frontend": "توسعه فرانت‌اند",
+  "backend": "توسعه بک‌اند",
+  "uiux": "طراحی یوآی و یوایکس",
+  "windowspp": "توسعه اپلیکیشن ویندوز",
+  "yourname": "نام شما",
+  "username": "نام",
+  "email": "ایمیل",
+  "youremail": "ایمیل شما",
+  "yournote": "متن پیام",
+  "note": "متن",
+  "send": "بفرست بره"
+}

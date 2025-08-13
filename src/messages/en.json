@@ -1,0 +1,87 @@
+{
+  "name": "Ali Gholipour",
+  "about": "About",
+  "projects": "Projects",
+  "skills": "Skills",
+  "contact": "Contact",
+  "aboutme": "About Me!",
+  "download": "Download Resume",
+  "abouttext": "I’m a Front-End developer with around three years of successful experience in designing and building attractive and user-friendly interfaces. During this time, I’ve worked on various projects, always aiming to create websites that are both responsive and deliver an exceptional user experience.",
+  "abouttext2": "Currently, I’m continuing my learning journey and working on different projects with React and Next.js to create more engaging, optimized, and seamless user experiences. I’m looking for new opportunities to enhance my skills and provide creative solutions.",
+  "workexperience": "Work Experience",
+  "worktitle1": "Junior Front-End Developer at AtiNegar",
+  "workyear1": "2024-2025",
+  "workdecriotion1": "Worked on developing the admin panel and implementing the logging system.",
+  "toolsused": "Tools Used:",
+  "viewsprocect": "View Project",
+  "worktiltle2":"Front End Developer in AvihangCo",
+  "workyear2": "2025-until now",
+
+  "projectData": [
+    {
+      "title": "Todo List",
+      "description": "A Todo List created with React and Tailwind CSS",
+      "image": "/pics/Screenshot 2025-07-14 151715.png",
+      "link": "https://advanced-to-do-list-react-mu.vercel.app/"
+    },
+    {
+      "title": "Music Player",
+      "description": "A Music Player built with JavaScript, HTML, and CSS",
+      "image": "/pics/Screenshot 2025-07-14 152438.png",
+      "link": "https://music-player-zeta-two.vercel.app/"
+    },
+    {
+      "title": "Admin Panel & User Management",
+      "description": "An Admin Panel built with Next.js and Supabase Database\nEmail: ali1383gho@gmail.com\nPassword: 123456",
+      "image": "/pics/Screenshot 2025-07-14 153733.png",
+      "link": "https://user-management-dashboard-lilac.vercel.app/"
+    },
+    {
+      "title": "Sign In & Location Saver",
+      "description": "A Sign In app with map and location saving features",
+      "image": "/pics/Screenshot 2025-07-14 162301.png",
+      "link": "https://sign-in-location-saver-achare-api.vercel.app/"
+    },
+    {
+      "title": "Wish List & Kanban Chart",
+      "description": "A Wish List where you can drag & drop items according to your needs",
+      "image": "/pics/Screenshot 2025-07-15 140707.png",
+      "link": "https://wish-lisitwith-kanban-chart.vercel.app/"
+    },
+    {
+      "title": "Weather App",
+      "description": "A Weather App where you can enter the name of a country or city and get weather information",
+      "image": "/pics/Screenshot 2025-07-14 162811.png",
+      "link": "https://weather-app-api-phi.vercel.app/"
+    },
+    {
+      "title": "Todo List with Zustand",
+      "description": "A feature-rich Todo List developed with Zustand",
+      "image": "/pics/Screenshot 2025-08-11 181624.png",
+      "link": "https://todo-list-with-zustand-mu.vercel.app/"
+    }
+  ],
+  "frontend":"Front-End Development",
+  "backend":"Back-End Development",
+  "uiux":"UI/UX Design",
+  "windowspp":"Windows App Development",
+
+  "viewmoreprojects": "More Projects",
+  "contactme!": "Contact Me!",
+  "contactMessage": [
+    "Have a question, suggestion, or just want to send a warm hello? :)",
+    "Fill out the form below and I’ll get back to you as soon as possible.",
+    "",
+    "Whether you have a project idea, a collaboration proposal, or simply want to write whatever’s on your mind, I’ll be happy to read it.",
+    "Your message matters — I’m looking forward to chatting with you!"
+  ],
+  "yourname": "Your Name",
+  "username": "Name",
+  "email": "Email",
+  "youremail": "Your Email",
+  "yournote": "Your Message",
+  "note": "Message",
+  "send": "Send"
+}
+
+

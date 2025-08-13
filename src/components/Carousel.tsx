@@ -36,7 +36,6 @@ const Carousel: React.FC<CarouselProps> = ({
     },
   });
 
-  // Auto scroll
   useEffect(() => {
     if (!autoplay) return;
     const timer = setInterval(() => {
@@ -56,7 +55,6 @@ const Carousel: React.FC<CarouselProps> = ({
         ))}
       </div>
 
-      {/* Arrows */}
       {showArrows && (
         <>
           <button
