@@ -20,10 +20,10 @@ const Section = ({
   return (
     <section id={id} className={`snap-start  min-h-[calc(100vh-85px)]  ${className}`}>
       <motion.div
-        initial={{ opacity: 0, y: 70 }}
-        whileInView={{ opacity: 1, y:0  }}
-        transition={{ duration: 0.9, ease: "easeInOut", delay }}
-        viewport={{ amount }}
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{  amount: 0.2 }}
       >
         {children}
       </motion.div>
