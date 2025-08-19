@@ -1,5 +1,6 @@
 
-import { motion } from "motion/react";
+import { AnimatePresence } from "motion/react"
+import * as motion from "motion/react-client"
 import { ReactNode } from "react";
 
 interface AnimatedSectionProps {
@@ -18,6 +19,7 @@ const Section = ({
   amount = 0.6,
 }: AnimatedSectionProps) => {
   return (
+    <AnimatePresence mode="popLayout">
     <section id={id} className={`snap-start  min-h-[calc(100vh-85px)]  ${className}`}>
       <motion.div
           initial={{ opacity: 0, y: 60 }}
@@ -28,6 +30,7 @@ const Section = ({
         {children}
       </motion.div>
     </section>
+    </AnimatePresence>
   );
 };
 
