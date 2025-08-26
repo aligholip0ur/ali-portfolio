@@ -32,8 +32,6 @@ export default function Contact() {
         },
         validationSchema,
         onSubmit: async (values, { resetForm }) => {
-            console.log(values);
-
             try {
                 await sendEmail(values).unwrap();
                 console.log("Success");

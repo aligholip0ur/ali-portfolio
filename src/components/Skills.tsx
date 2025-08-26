@@ -22,7 +22,7 @@ export default function Skills() {
                             CardBg="bg-[#E3F2FD]"
                             Cardtitle={t('frontend')}
                             Carddecription="React, Next.js, TypeScript, Redux Toolkit, Zustand, Tailwind/BootStrap CSS, StoryBook"
-                            Cardskillpercentage={90}
+                            Cardskillpercentage={75}
                             CardIcone={<Code2 className="inline-block text-[#1976D2]" />}
                         />
 
@@ -46,7 +46,7 @@ export default function Skills() {
                             CardBg="bg-[#FFF3E0]"
                             Cardtitle={t('windowspp')}
                             Carddecription="C#, Windows Forms, Basic C++"
-                            Cardskillpercentage={70}
+                            Cardskillpercentage={60}
                             CardIcone={<AppWindow className="inline-block text-[#EF6C00]" />}
                         />
 

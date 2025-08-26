@@ -86,5 +86,10 @@
   "nameRequired":"NameRequired",
   "invalidEmail":"InvalidEmail",
   "emailRequired":"EmailRequired",
-  "messageRequired":"MessageRequired"
+  "messageRequired":"MessageRequired",
+  "skillsbreak":"Skills breakdown",
+  "skillsdetails":"List of sub-skills:",
+  "Close":"Close"
+
+  
 }

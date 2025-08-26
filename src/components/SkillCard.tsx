@@ -60,9 +60,9 @@ const t = useTranslations();
                                 </DialogTrigger>
                                 <DialogContent className="sm:max-w-md">
                                     <DialogHeader>
-                                        <DialogTitle>Skills breakdown</DialogTitle>
+                                        <DialogTitle>{t('skillsbreak')}</DialogTitle>
                                         <DialogDescription>
-                                            List of sub-skills:
+                                            {t('skillsdetails')}
                                         </DialogDescription>
                                     </DialogHeader>
 
@@ -84,7 +84,7 @@ const t = useTranslations();
                                                 type="button"
                                                 variant="secondary"
                                             >
-                                                Close
+                                               {t('Close')}
                                             </Button>
                                         </DialogClose>
                                     </DialogFooter>

@@ -85,6 +85,9 @@
   "nameRequired":"نام الزامیست",
   "invalidEmail":"ایمیل نامعتبر",
   "emailRequired":"ایمیل الزامیست",
-  "messageRequired":"متن الزامیست"
+  "messageRequired":"متن الزامیست",
+  "skillsbreak":"جزییات مهارت",
+  "skillsdetails":"لیست جزییات: ",
+  "Close":"بستن"
 
 }
