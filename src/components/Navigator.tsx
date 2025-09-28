@@ -13,8 +13,6 @@ import { useTranslations } from "next-intl";
 import { Moon, Sun } from "lucide-react";
 import { Button } from "./ui/button";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import Link from "next/link";
-import { log } from "console";
 
 export default function Navigatorr({ isDark, toggleTheme }: { isDark?: boolean, toggleTheme?: () => void }) {
   const t = useTranslations();
@@ -37,8 +35,6 @@ export default function Navigatorr({ isDark, toggleTheme }: { isDark?: boolean, 
   const pathname = usePathname();
   const name = t('name');
   const letters = name.split('');
-  console.log(pathname);
-
   return (
     <>
       <nav className="w-full flex flex-row justify-between">
@@ -101,7 +97,7 @@ export default function Navigatorr({ isDark, toggleTheme }: { isDark?: boolean, 
                   )}
                 </NavigationMenuLink>
               </NavigationMenuItem>
-              <NavigationMenuItem onClick={toggleTheme} className="cursor-pointer">
+              <NavigationMenuItem  className="cursor-pointer">
                 <NavigationMenuLink href={pathname === "/en" ? "/fa" : "/en"}>
                   {pathname === "/en" ? "فارسی" : "English"}
                 </NavigationMenuLink>
@@ -143,7 +139,7 @@ export default function Navigatorr({ isDark, toggleTheme }: { isDark?: boolean, 
                 <NavigationMenuLink href="#contact">{t('contact')}</NavigationMenuLink>
               </NavigationMenuContent>
             </NavigationMenuItem>
-            <NavigationMenuItem onClick={toggleTheme} className="cursor-pointer">
+            <NavigationMenuItem  className="cursor-pointer">
               <NavigationMenuLink href={pathname === "/en" ? "/fa" : "/en"}>
                 {pathname === "/en" ? "فارسی" : "English"}
               </NavigationMenuLink>

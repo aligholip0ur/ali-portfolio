@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/Theme-context";
 import { NextIntlClientProvider } from "next-intl";
 import { ReactNode } from "react";
 import { notFound } from "next/navigation";
+
 export function generateStaticParams() {
   return [{ locale: "en" }, { locale: "fa" }];
 }
@@ -31,17 +32,19 @@ export default async function RootLayout({
   } catch {
     notFound();
   }
+ 
 
   return (
+    <ThemeProvider>
     <html lang={locale} dir={locale === "fa" ? "rtl" : "ltr"} className={locale ==="fa" ? "font-iranyekan" :""}>
       <body className="transition-colors duration-2000 delay-300 ease-out">
-        <ThemeProvider>
           <NextIntlClientProvider locale={locale} messages={messages}>
             <Header />
             {children}
           </NextIntlClientProvider>
-        </ThemeProvider>
       </body>
     </html>
+    </ThemeProvider>
+
   );
 }
